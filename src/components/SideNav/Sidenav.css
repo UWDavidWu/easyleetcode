@@ -1,0 +1,48 @@
+.sideNav {
+    flex: 1;
+    height: calc(100vh - 50px);
+    background-color: #ff634750;
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:50px;
+}
+
+@media screen and (max-width: 768px) {
+    .sideNav {
+        display: none;
+    }
+}
+    
+
+.sideNavWrapper {
+    padding: 20px;
+    color: blue;
+}
+
+.sideNavTitle {
+    font-size:2rem;
+    color: black;
+}
+
+.sideNavList {
+    list-style: none;
+    padding: 5px;
+}
+
+.sideNavItem {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sideNavItem.active,
+.sideNavItem:hover {
+    background-color: #f5f5f5;
+}
+
+.sideNavIcon {
+    margin-right: 10px;
+    font-size: 20px !important;
+}

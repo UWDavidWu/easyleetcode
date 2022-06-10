@@ -1,0 +1,43 @@
+.topNav {
+    width: 100%;
+    height:50px;
+    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+
+.topNavWrapper {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNavRight {
+    display: flex;
+    align-items: center;
+}
+
+.topNavIconContainer {
+    cursor: pointer;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+.topNavIconBadge {
+    width:15px;
+    height:15px;
+    position: absolute;
+    top:-5px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}

@@ -1,0 +1,7 @@
+.homeContainer {
+    flex:4
+}
+.homeHeader {
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+}

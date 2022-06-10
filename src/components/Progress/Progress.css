@@ -1,0 +1,12 @@
+.progressContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progressCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
