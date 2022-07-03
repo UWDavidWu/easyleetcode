@@ -1,10 +1,12 @@
 .sideNav {
     flex: 1;
-    height: calc(100vh - 50px);
-    background-color: #ff634750;
+    height: calc(100vh - 100px);
+    background-color: black;
     backdrop-filter: blur(10px);
     position:sticky;
     top:50px;
+    border-radius: 20px;
+    margin: 50px 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -12,37 +14,130 @@
         display: none;
     }
 }
-    
+
+
 
 .sideNavWrapper {
     padding: 20px;
-    color: blue;
+    color: white;
+    height: 700px;
+   
 }
 
 .sideNavTitle {
     font-size:2rem;
-    color: black;
+    margin: 10px auto;
 }
 
 .sideNavList {
     list-style: none;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100%
+    
 }
 
 .sideNavItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
     border-radius: 10px;
+    position: relative;
 }
 
 .sideNavItem.active,
-.sideNavItem:hover {
-    background-color: #f5f5f5;
+.sideNavItem:hover  {
+    background-color: var(--theme-color-secondary);
 }
 
 .sideNavIcon {
     margin-right: 10px;
+    margin-left: 40px;
     font-size: 20px !important;
+}
+
+.sideNavMenu {
+    height:100%;
+    
+}
+
+.sideline {
+    position: absolute;
+    left: 0px;
+    width: 10px;
+    height: 100%;
+    background: var(--theme-color-main);
+  }
+
+  .link {
+    width: 100%;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    margin: 20px auto;
+    justify-content: space-around;
+
+  }
+
+  .sideNavAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+}
+
+.sideNavAvatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sideNavName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.userbutton {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 60px;
+    padding: 1.25rem 1.75rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.userbutton.logout {
+    color: rgb(255,123,123);
+    border: 1px solid rgb(255,123,123);
+}
+
+.userbutton.login {
+    color: rgb(144,239,179);
+    border: 1px solid rgb(144,239,179);
+}
+
+.userbutton.logout:hover {
+    background-color:rgb(255,123,123,0.5);
+}
+
+.userbutton.login:hover {
+    background-color:rgb(144,239,179,0.5);
 }

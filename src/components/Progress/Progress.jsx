@@ -47,9 +47,9 @@ const Progress = () => {
         <Doughnut data={data} />
       </div>
       <div className="progressCardContainer">
-        <ProgressCard value={easy} name="Easy"/>
-        <ProgressCard value={medium} name="Medium"/>
-        <ProgressCard value={hard} name="Hard"/>
+        <ProgressCard value={easy} aim="60" name="Easy"/>
+        <ProgressCard value={medium} aim="120" name="Medium"/>
+        <ProgressCard value={hard} aim="20" name="Hard"/>
       </div>
     </div>
   );

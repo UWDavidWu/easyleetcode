@@ -8,3 +8,16 @@
     padding: 0;
     margin: 0;
 }
+
+.page {
+    margin: 50px;
+    overflow: hidden;
+    flex: 4;
+}
+
+@media screen and (max-width: 600px) {
+    .page {
+        margin: 0px;
+    }
+}
+    
